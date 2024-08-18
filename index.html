@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bidding Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bidding Web App</h1>
+
+      <!-- File Upload Section -->
+      <div class="upload-section">
+        <h2>Upload Initial Quotes (Excel File)</h2>
+        <input type="file" id="fileUpload" accept=".xlsx, .xls" />
+        <button onclick="uploadFile()">Upload</button>
+      </div>
+
+      <!-- Timer Countdown -->
+      <div class="timer">
+        <h2>Time Remaining: <span id="countdown">20:00</span></h2>
+      </div>
+
+      <!-- Bidding Section -->
+      <div class="bidding-section">
+        <h2>Live Bidding</h2>
+        <table id="bidTable">
+          <thead>
+            <tr>
+              <th>Vendor</th>
+              <th>Initial Quote</th>
+              <th>Current Bid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Bids will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <input type="number" id="bidAmount" placeholder="Enter your bid" />
+        <button onclick="submitBid()">Submit Bid</button>
+      </div>
+
+      <!-- Notification Section -->
+      <div id="notifications"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

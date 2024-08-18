@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .upload-section,
+  .bidding-section {
+    margin-top: 30px;
+  }
+  
+  h2 {
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"],
+  input[type="number"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .timer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #e74c3c;
+  }
+  
+  #notifications {
+    margin-top: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+  }
+  
